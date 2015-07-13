@@ -21,12 +21,14 @@ import org.apache.commons.logging.LogFactory;
 public class PropertiesUtil {
 	private static Log logger = LogFactory.getLog(PropertiesUtil.class);
 
-	private static String SYSTEM = "application.properties";
+    private String SYSTEM = "application.properties";
+    
 	private static PropertiesUtil util = null;
 
 	public static PropertiesUtil getInstance() {
-		if (util == null)
+		if (util == null){
 			util = new PropertiesUtil();
+		}
 		return util;
 	}
 
@@ -42,12 +44,15 @@ public class PropertiesUtil {
 		InputStream is = null;
 		try {
 			if (prop == null) {
-				is = new FileInputStream(fileName);
-				if (fileName.startsWith("/")){
-					is = PropertiesUtil.class.getResourceAsStream(fileName);
-				}else{
-					is = PropertiesUtil.class.getResourceAsStream((new StringBuilder("/")).append(fileName).toString());
-				}
+                try {
+                    is = new FileInputStream(fileName);// 创建输入流
+                } catch (Exception e) {
+    				if (fileName.startsWith("/")){
+    					is = PropertiesUtil.class.getResourceAsStream(fileName);
+    				}else{
+    					is = PropertiesUtil.class.getResourceAsStream((new StringBuilder("/")).append(fileName).toString());
+    				}
+                }
 			}
 			prop = new Properties();
 			if (is != null){
