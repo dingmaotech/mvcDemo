@@ -44,27 +44,27 @@
 </script>
 </head>
 <body>
-<h1>不显示节点图标的树</h1>
+	<h1>不显示节点图标的树</h1>
 	<h6>[ 文件路径: ztreeDemo/core/noLine.jsp ]</h6>
-<div class="content_wrap">
-	<div class="zTreeDemoBackground left">
-		<ul id="treeDemo" class="ztree"></ul>
+	<div class="content_wrap">
+		<div class="zTreeDemoBackground left">
+			<ul id="treeDemo" class="ztree"></ul>
+		</div>
+		<div class="right">
+			<ul class="info">
+				<li class="title"><h2>1、setting 配置信息说明</h2>
+					<ul class="list">
+						<li>此 Demo 利用 Function 设置了使父节点不显示图标的规则</li>
+						<li class="highlight_red">是否显示节点图标请设置 setting.view.showIcon
+							属性，详细请参见 API 文档中的相关内容</li>
+					</ul></li>
+				<li class="title"><h2>2、treeNode 节点数据说明</h2>
+					<ul class="list">
+						<li>是否显示图标，不需要 treeNode
+							节点数据提供特殊设置，但如果用户需要根据不同节点动态设置，可以对节点数据增加特殊属性，用于判别</li>
+					</ul></li>
+			</ul>
+		</div>
 	</div>
-	<div class="right">
-		<ul class="info">
-			<li class="title"><h2>1、setting 配置信息说明</h2>
-				<ul class="list">
-				<li>此 Demo 利用 Function 设置了使父节点不显示图标的规则</li>
-				<li class="highlight_red">是否显示节点图标请设置 setting.view.showIcon 属性，详细请参见 API 文档中的相关内容</li>
-				</ul>
-			</li>
-			<li class="title"><h2>2、treeNode 节点数据说明</h2>
-				<ul class="list">
-				<li>是否显示图标，不需要 treeNode 节点数据提供特殊设置，但如果用户需要根据不同节点动态设置，可以对节点数据增加特殊属性，用于判别</li>
-				</ul>
-			</li>
-		</ul>
-	</div>
-</div>
 </body>
 </html>

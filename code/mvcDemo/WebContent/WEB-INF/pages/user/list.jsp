@@ -73,18 +73,7 @@ $(document).ready(function() {
   	    "sClass": "center",
   	    "bSearchable": false,
   	    "bStorable": false,
-  	    } ]	
-  	    ,"columnDefs": [{
-			// 定义操作列
-			"targets":3,
-			"data": null,
-			"render": function(data, type, row) {
-				var html = '<a href="javascript:void(0);" class="delete btn btn-default btn-xs"><i class="fa fa-times"></i> 删除</a>'
-				html += ' <a href="javascript:void(0);" class="edit btn btn-default btn-xs"><i class="fa fa-arrow-up"></i> 修改</a>'
-				html += ' <a href="javascript:void(0);" class="detail btn btn-default btn-xs"><i class="fa fa-arrow-down"></i>详细</a>'
-				return html;
-			}
-		}],
+  	    } ]	,
         language: {
             "sProcessing":   "处理中...",
             "sLengthMenu":   "_MENU_ 条结果",

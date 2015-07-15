@@ -27,7 +27,7 @@
 <script type="text/javascript"
 	src="<c:url value='/frame/js/plugins/zTree/js/jquery.ztree.core-3.5.js'/>"></script>
 
-	<script type="text/javascript">
+<script type="text/javascript">
 	<!--
 	var url = "<c:url value='/ztreeDemo/asyncData/getChildNodes.do'/>";
 	var setting = {
@@ -88,27 +88,27 @@
 	</script>
 </head>
 <body>
-<h1>点击后异步加载下级节点数据的树</h1>
+	<h1>点击后异步加载下级节点数据的树</h1>
 	<h6>[ 文件路径: ztreeDemo/core/asyncChild.jsp ]</h6>
-<div class="content_wrap">
-	<div class="zTreeDemoBackground left">
-		<ul id="treeDemo" class="ztree"></ul>
+	<div class="content_wrap">
+		<div class="zTreeDemoBackground left">
+			<ul id="treeDemo" class="ztree"></ul>
+		</div>
+		<div class="right">
+			<ul class="info">
+				<li class="title"><h2>1、setting 配置信息说明</h2>
+					<ul class="list">
+						<li class="highlight_red">使用异步加载，必须设置 setting.async
+							中的各个属性，详细请参见 API 文档中的相关内容</li>
+					</ul></li>
+				<li class="title"><h2>2、treeNode 节点数据说明</h2>
+					<ul class="list">
+						<li>异步加载功能对于 treeNode 节点数据没有特别要求，如果采用简单 JSON 数据，请设置
+							setting.data.simple 中的属性</li>
+						<li>如果异步加载每次都只返回单层的节点数据，那么可以不设置简单 JSON 数据模式</li>
+					</ul></li>
+			</ul>
+		</div>
 	</div>
-	<div class="right">
-		<ul class="info">
-			<li class="title"><h2>1、setting 配置信息说明</h2>
-				<ul class="list">
-				<li class="highlight_red">使用异步加载，必须设置 setting.async 中的各个属性，详细请参见 API 文档中的相关内容</li>
-				</ul>
-			</li>
-			<li class="title"><h2>2、treeNode 节点数据说明</h2>
-				<ul class="list">
-				<li>异步加载功能对于 treeNode 节点数据没有特别要求，如果采用简单 JSON 数据，请设置 setting.data.simple 中的属性</li>
-				<li>如果异步加载每次都只返回单层的节点数据，那么可以不设置简单 JSON 数据模式</li>
-				</ul>
-			</li>
-		</ul>
-	</div>
-</div>
 </body>
 </html>

@@ -81,7 +81,7 @@
 </head>
 <body>
 	<!-- Start Page Loading -->
-<!-- 	<div id="loader-wrapper">
+	<!-- 	<div id="loader-wrapper">
 		<div id="loader"></div>
 		<div class="loader-section section-left"></div>
 		<div class="loader-section section-right"></div>
@@ -94,7 +94,7 @@
 				<div class="col s12 m12 l12">
 					<ol class="breadcrumb">
 						<li><a href="index.html">首页</a></li>
-						<li><a href="<c:url value='/user/enterList.do'/>" >用户管理</a></li>
+						<li><a href="<c:url value='/user/enterList.do'/>">用户管理</a></li>
 						<li class="active">修改用户</li>
 					</ol>
 				</div>
@@ -139,8 +139,8 @@
 				<div class="row">
 					<div class="input-field col s12">
 						<a class="btn waves-effect waves-light col s5"
-							href="javascript:submitForm()">修改</a>
-						<a class="btn waves-effect waves-light col s5"
+							href="javascript:submitForm()">修改</a> <a
+							class="btn waves-effect waves-light col s5"
 							href="javascript:history.go(-1)">返回</a>
 					</div>
 					<div class="input-field col s12"></div>

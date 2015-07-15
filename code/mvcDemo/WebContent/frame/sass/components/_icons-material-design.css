@@ -85,6 +85,8 @@ Backtrace:
 /usr/local/rvm/gems/ruby-2.1.5@rails4/bin/ruby_executable_hooks:15:in `<main>'
 */
 body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$icons-font-path\".\A         on line 6 of /home/ubuntu/workspace/sass/components/_icons-material-design.scss\A \A 1: $font-mdi   : 'Material-Design-Icons';\A 2: $mdi-prefix : 'mdi-';\A 3: \A 4: @font-face {\A 5:     font-family: \"#{$font-mdi}\";\A 6:     src:url(\"#{$icons-font-path}#{$font-mdi}.eot?#iefix\") format(\"embedded-opentype\"),\A 7:         url(\"#{$icons-font-path}#{$font-mdi}.woff\") format(\"woff\"),\A 8:         url(\"#{$icons-font-path}#{$font-mdi}.ttf\") format(\"truetype\"),\A 9:         url(\"#{$icons-font-path}#{$font-mdi}.svg##{$font-mdi}\") format(\"svg\");\A 10:     font-weight: normal;\A 11:     font-style: normal;"; }
+	white-space: pre;
+	font-family: monospace;
+	content:
+		"Error: Undefined variable: \"$icons-font-path\".\A         on line 6 of /home/ubuntu/workspace/sass/components/_icons-material-design.scss\A \A 1: $font-mdi   : 'Material-Design-Icons';\A 2: $mdi-prefix : 'mdi-';\A 3: \A 4: @font-face {\A 5:     font-family: \"#{$font-mdi}\";\A 6:     src:url(\"#{$icons-font-path}#{$font-mdi}.eot?#iefix\") format(\"embedded-opentype\"),\A 7:         url(\"#{$icons-font-path}#{$font-mdi}.woff\") format(\"woff\"),\A 8:         url(\"#{$icons-font-path}#{$font-mdi}.ttf\") format(\"truetype\"),\A 9:         url(\"#{$icons-font-path}#{$font-mdi}.svg##{$font-mdi}\") format(\"svg\");\A 10:     font-weight: normal;\A 11:     font-style: normal;";
+}

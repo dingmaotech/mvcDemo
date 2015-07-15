@@ -58,7 +58,7 @@
 </head>
 <body>
 	<!-- Start Page Loading -->
-<!-- 	<div id="loader-wrapper">
+	<!-- 	<div id="loader-wrapper">
 		<div id="loader"></div>
 		<div class="loader-section section-left"></div>
 		<div class="loader-section section-right"></div>
@@ -71,7 +71,7 @@
 				<div class="col s12 m12 l12">
 					<ol class="breadcrumb">
 						<li><a href="index.html">首页</a></li>
-						<li><a href="<c:url value='/user/enterList.do'/>" >用户管理</a></li>
+						<li><a href="<c:url value='/user/enterList.do'/>">用户管理</a></li>
 						<li class="active">用户详情</li>
 					</ol>
 				</div>
@@ -91,8 +91,8 @@
 				<div class="input-field col s12">
 					<i class="mdi-social-person-outline prefix  active"></i> <label
 						for="username" class="center-align  active">用户名：</label> <input
-						type="text" id="username" name="username"
-						value="${user.username}" readonly="readonly">
+						type="text" id="username" name="username" value="${user.username}"
+						readonly="readonly">
 				</div>
 			</div>
 			<div class="row margin">

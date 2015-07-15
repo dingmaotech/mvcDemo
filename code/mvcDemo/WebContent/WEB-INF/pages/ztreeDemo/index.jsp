@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@taglib  uri="http://java.sun.com/jsp/jstl/core"  prefix="c" %>
+	pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -15,14 +15,14 @@
 <title>ZTREE DEMO</title>
 <link
 	href="<c:url value='/frame/js/plugins/zTree/zTreeStyle/zTreeStyle.css'/>"
-	type="text/css" rel="stylesheet" >
+	type="text/css" rel="stylesheet">
 <!-- jQuery Library -->
 <script type="text/javascript"
 	src="<c:url value='/frame/js/jquery-1.11.2.min.js'/>"></script>
 <!-- zTree Library -->
 <script type="text/javascript"
 	src="<c:url value='/frame/js/plugins/zTree/js/jquery.ztree.all-3.5.js'/>"></script>
-	
+
 </head>
 <script type="text/javascript">
 <!--
@@ -147,15 +147,16 @@ function loadReady() {
 //-->
 </script>
 <body>
-<table width="100%"  border=0 height=600px align=left>
-	<tr>
-		<td width="20%" align="left" valign="top" style="border-right: #999999 1px dashed" >
-			<ul id="tree" class="ztree" style="width:260px; overflow:auto;"></ul>
-		</td>
-		<td>
-			<iframe id="testIframe"  name="" frameborder="0" scrolling="auto"  width="100%"  height="600px"  src="<c:url value='/ztreeDemo/core/standardData.do'/>"></iframe>
-		</td>
-	</tr>
-</table>
+	<table width="100%" border=0 height=600px align=left>
+		<tr>
+			<td width="20%" align="left" valign="top"
+				style="border-right: #999999 1px dashed">
+				<ul id="tree" class="ztree" style="width: 260px; overflow: auto;"></ul>
+			</td>
+			<td><iframe id="testIframe" name="" frameborder="0"
+					scrolling="auto" width="100%" height="600px"
+					src="<c:url value='/ztreeDemo/core/standardData.do'/>"></iframe></td>
+		</tr>
+	</table>
 </body>
 </html>
