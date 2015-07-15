@@ -76,7 +76,7 @@
 	 }
  </script>
 </head>
-<body >
+<body>
 	<!--当前位置 start-->
 	<div id="breadcrumbs-wrapper" class="  lighten-3">
 		<div class="container">
@@ -84,7 +84,7 @@
 				<div class="col s12 m12 l12">
 					<ol class="breadcrumb">
 						<li><a href="index.html">首页</a></li>
-						<li><a href="<c:url value='/student/enterList.do'/>" >学生管理</a></li>
+						<li><a href="<c:url value='/student/enterList.do'/>">学生管理</a></li>
 						<li class="active">添加学生</li>
 					</ol>
 				</div>
@@ -117,15 +117,14 @@
 				<div class="row margin">
 					<div class="input-field col s6">
 						<i class="mdi-av-my-library-books prefix  active"></i> <input
-							name="stuSex" type="radio" id="boy" value="0" checked="checked" /> <label for="boy">男</label>
-						<input name="stuSex" type="radio" id="girl" value="1" /> <label
-							for="girl">女</label>
+							name="stuSex" type="radio" id="boy" value="0" checked="checked" />
+						<label for="boy">男</label> <input name="stuSex" type="radio"
+							id="girl" value="1" /> <label for="girl">女</label>
 					</div>
 					<div class="input-field col s6">
 						<i class="mdi-av-my-library-books prefix"></i> <label
 							for="birthday" class="center-align">出生日期：</label> <input
-							type="date" id="birthday" name="birthday"
-							class="datepicker">
+							type="date" id="birthday" name="birthday" class="datepicker">
 					</div>
 				</div>
 				<div class="row margin">
@@ -157,8 +156,8 @@
 				<div class="row">
 					<div class="input-field col s12">
 						<a class="btn waves-effect waves-light col s5"
-							href="javascript:submitForm()">添加</a> 
-						<a class="btn waves-effect waves-light col s5"
+							href="javascript:submitForm()">添加</a> <a
+							class="btn waves-effect waves-light col s5"
 							href="javascript:history.go(-1)">返回</a>
 					</div>
 					<div class="input-field col s12"></div>

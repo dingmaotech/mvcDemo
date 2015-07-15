@@ -31,23 +31,31 @@
 	href="<c:url value='/frame/images/favicon/favicon-32x32.png'/>"
 	sizes="32x32">
 <!-- Favicons-->
-<link rel="apple-touch-icon-precomposed"	href="<c:url value='/frame/images/favicon/apple-touch-icon-152x152.png'/>">
+<link rel="apple-touch-icon-precomposed"
+	href="<c:url value='/frame/images/favicon/apple-touch-icon-152x152.png'/>">
 <!-- CORE CSS-->
-<link href="<c:url value='/frame/css/materialize.css'/>" type="text/css"	rel="stylesheet" media="screen,projection">
-<link href="<c:url value='/frame/css/style.css'/>" type="text/css"	rel="stylesheet" media="screen,projection">
-<link href="<c:url value='/frame/css/page-center.css'/>" type="text/css"	rel="stylesheet" media="screen,projection">
+<link href="<c:url value='/frame/css/materialize.css'/>" type="text/css"
+	rel="stylesheet" media="screen,projection">
+<link href="<c:url value='/frame/css/style.css'/>" type="text/css"
+	rel="stylesheet" media="screen,projection">
+<link href="<c:url value='/frame/css/page-center.css'/>" type="text/css"
+	rel="stylesheet" media="screen,projection">
 
 <!-- jQuery Library -->
-<script type="text/javascript"	src="<c:url value='/frame/js/jquery-1.11.2.min.js'/>"></script>
+<script type="text/javascript"
+	src="<c:url value='/frame/js/jquery-1.11.2.min.js'/>"></script>
 <!--materialize js-->
-<script type="text/javascript"	src="<c:url value='/frame/js/materialize.js'/>"></script>
+<script type="text/javascript"
+	src="<c:url value='/frame/js/materialize.js'/>"></script>
 <!--prism-->
 <script type="text/javascript" src="<c:url value='/frame/js/prism.js'/>"></script>
 <!--scrollbar-->
-<script type="text/javascript"	src="<c:url value='/frame/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js'/>"></script>
+<script type="text/javascript"
+	src="<c:url value='/frame/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js'/>"></script>
 <!--plugins.js - Some Specific JS codes for Plugin Settings-->
-<script type="text/javascript"	src="<c:url value='/frame/js/plugins.js'/>"></script>
-	
+<script type="text/javascript"
+	src="<c:url value='/frame/js/plugins.js'/>"></script>
+
 <script type="text/javascript">
 	$(document).ready(function(){
 		/* var sex = "${student.stuSex}";
@@ -74,7 +82,7 @@
 	 }
  </script>
 </head>
-<body >
+<body>
 	<!--当前位置 start-->
 	<div id="breadcrumbs-wrapper" class="  lighten-3">
 		<div class="container">
@@ -82,7 +90,7 @@
 				<div class="col s12 m12 l12">
 					<ol class="breadcrumb">
 						<li><a href="index.html">首页</a></li>
-						<li><a href="<c:url value='/student/enterList.do'/>" >学生管理</a></li>
+						<li><a href="<c:url value='/student/enterList.do'/>">学生管理</a></li>
 						<li class="active">修改学生</li>
 					</ol>
 				</div>
@@ -103,25 +111,27 @@
 				</div>
 				<div class="row margin">
 					<div class="input-field col s6">
-						<i class="mdi-av-my-library-books prefix  active"></i> <label for="name"
-							class="validate center-align  active">学号：</label> <input type="text"
-							id="stuNo" name="stuNo" value="${student.stuNo}"
+						<i class="mdi-av-my-library-books prefix  active"></i> <label
+							for="name" class="validate center-align  active">学号：</label> <input
+							type="text" id="stuNo" name="stuNo" value="${student.stuNo}"
 							placeholder="${student.stuNo}">
 					</div>
 					<div class="input-field col s6">
-						<i class="mdi-social-person-outline prefix  active"></i> <label for="name"
-							class="center-align  active">姓名：</label> <input type="text" id="stuName"
-							name="stuName" value="${student.stuName }"
-							placeholder="${student.stuName}">
+						<i class="mdi-social-person-outline prefix  active"></i> <label
+							for="name" class="center-align  active">姓名：</label> <input
+							type="text" id="stuName" name="stuName"
+							value="${student.stuName }" placeholder="${student.stuName}">
 					</div>
 				</div>
 				<div class="row margin">
 					<div class="input-field col s6">
-						<i class="mdi-av-my-library-books prefix  active"></i> 
-						<input name="stuSex" type="radio" id="boy" <c:if test='${student.stuSex eq 0}'>checked=checked </c:if>  value="0" /> 
-						<label for="boy">男</label>
-						<input name="stuSex" type="radio" id="girl"  <c:if test='${student.stuSex eq 1}'>checked=checked </c:if> value="1" /> 
-						<label for="girl">女</label>
+						<i class="mdi-av-my-library-books prefix  active"></i> <input
+							name="stuSex" type="radio" id="boy"
+							<c:if test='${student.stuSex eq 0}'>checked=checked </c:if>
+							value="0" /> <label for="boy">男</label> <input name="stuSex"
+							type="radio" id="girl"
+							<c:if test='${student.stuSex eq 1}'>checked=checked </c:if>
+							value="1" /> <label for="girl">女</label>
 					</div>
 					<div class="input-field col s6">
 						<i class="mdi-av-my-library-books prefix  active"></i> <label
@@ -133,16 +143,16 @@
 				</div>
 				<div class="row margin">
 					<div class="input-field col s6">
-						<i class="mdi-communication-call prefix  active"></i> <label for="stuTel"
-							class="center-align  active" >学生电话：</label> <input type="text" id="stuTel"
-							name="stuTel" value="${student.stuTel}"
+						<i class="mdi-communication-call prefix  active"></i> <label
+							for="stuTel" class="center-align  active">学生电话：</label> <input
+							type="text" id="stuTel" name="stuTel" value="${student.stuTel}"
 							placeholder="${student.stuTel}">
 					</div>
 					<div class="input-field col s6">
-						<i class="mdi-communication-call prefix  active"></i> <label for="homeTel"
-							class="center-align  active">家庭电话：</label> <input type="text"
-							id="homeTel" name="homeTel" value="${student.homeTel }"
-							placeholder="${student.homeTel }">
+						<i class="mdi-communication-call prefix  active"></i> <label
+							for="homeTel" class="center-align  active">家庭电话：</label> <input
+							type="text" id="homeTel" name="homeTel"
+							value="${student.homeTel }" placeholder="${student.homeTel }">
 					</div>
 				</div>
 				<div class="row margin">
@@ -156,17 +166,17 @@
 				</div>
 				<div class="row margin">
 					<div class="input-field col s12">
-						<i class="mdi-social-domain prefix  active"></i> <label for="stuHomeAddr"
-							class="center-align  active">家庭住址：</label> <input type="text"
-							id="homeAddr" name="homeAddr" value="${student.homeAddr}"
-							placeholder="${student.homeAddr}">
+						<i class="mdi-social-domain prefix  active"></i> <label
+							for="stuHomeAddr" class="center-align  active">家庭住址：</label> <input
+							type="text" id="homeAddr" name="homeAddr"
+							value="${student.homeAddr}" placeholder="${student.homeAddr}">
 					</div>
 				</div>
 				<div class="row">
 					<div class="input-field col s12">
 						<a class="btn waves-effect waves-light col s5"
-							href="javascript:submitForm()">修改</a>
-						<a class="btn waves-effect waves-light col s5"
+							href="javascript:submitForm()">修改</a> <a
+							class="btn waves-effect waves-light col s5"
 							href="javascript:history.go(-1)">返回</a>
 					</div>
 					<div class="input-field col s12"></div>

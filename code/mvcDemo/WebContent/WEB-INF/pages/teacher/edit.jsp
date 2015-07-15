@@ -71,66 +71,66 @@
 	 }
  </script>
 </head>
-	<!--当前位置 start-->
-	<div id="breadcrumbs-wrapper" class="  lighten-3">
-		<div class="container">
-			<div class="row">
-				<div class="col s12 m12 l12">
-					<ol class="breadcrumb">
-						<li><a href="index.html">首页</a></li>
-						<li><a href="<c:url value='/teacher/enterList.do'/>" >教师管理</a></li>
-						<li class="active">修改教师</li>
-					</ol>
-				</div>
+<!--当前位置 start-->
+<div id="breadcrumbs-wrapper" class="  lighten-3">
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<ol class="breadcrumb">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="<c:url value='/teacher/enterList.do'/>">教师管理</a></li>
+					<li class="active">修改教师</li>
+				</ol>
 			</div>
 		</div>
 	</div>
-	<!--当前位置 end-->
-	<!--当前位置 start-->
-	<div id="breadcrumbs-wrapper" class="  lighten-3">
-		<div class="container">
-			<div class="row">
-				<div class="col s12 m12 l12">
-					<ol class="breadcrumb">
-						<li><a href="index.html">首页</a></li>
-						<li><a href="<c:url value='/user/enterList.do'/>" >用户管理</a></li>
-						<li class="active">修改用户</li>
-					</ol>
-				</div>
+</div>
+<!--当前位置 end-->
+<!--当前位置 start-->
+<div id="breadcrumbs-wrapper" class="  lighten-3">
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<ol class="breadcrumb">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="<c:url value='/user/enterList.do'/>">用户管理</a></li>
+					<li class="active">修改用户</li>
+				</ol>
 			</div>
 		</div>
 	</div>
-	<!--当前位置 end-->
-	<div class="divider"></div>
-	<div id="input-fields" class="row">
-		<div class="col s12 z-depth-4 card-panel">
-			<form class="col s12" id="editForm" name="editForm" method="post"
-				action="<c:url value='/teacher/update.do'/>">
-				<input type="hidden" name="id" value="${teacher.id}">
-				<div class="row">
-					<div class="input-field col s12 center">
-						<h4>修改教师</h4>
-					</div>
+</div>
+<!--当前位置 end-->
+<div class="divider"></div>
+<div id="input-fields" class="row">
+	<div class="col s12 z-depth-4 card-panel">
+		<form class="col s12" id="editForm" name="editForm" method="post"
+			action="<c:url value='/teacher/update.do'/>">
+			<input type="hidden" name="id" value="${teacher.id}">
+			<div class="row">
+				<div class="input-field col s12 center">
+					<h4>修改教师</h4>
 				</div>
-				<div class="row margin">
-					<div class="input-field col s12">
-						<i class="mdi-social-person-outline prefix active"></i> <label
-							for="teachername" class="center-align active">教师名：</label> <input
-							type="text"  id="teachername"
-							name="name" value="${teacher.name}" class="validate">
-					</div>
+			</div>
+			<div class="row margin">
+				<div class="input-field col s12">
+					<i class="mdi-social-person-outline prefix active"></i> <label
+						for="teachername" class="center-align active">教师名：</label> <input
+						type="text" id="teachername" name="name" value="${teacher.name}"
+						class="validate">
 				</div>
-				<div class="row">
-					<div class="input-field col s12">
-						<a class="btn waves-effect waves-light col s5"
-							href="javascript:submitForm()">修改</a> 
-						<a class="btn waves-effect waves-light col s5"
-							href="javascript:history.go(-1)">返回</a>
-					</div>
-					<div class="input-field col s12"></div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<a class="btn waves-effect waves-light col s5"
+						href="javascript:submitForm()">修改</a> <a
+						class="btn waves-effect waves-light col s5"
+						href="javascript:history.go(-1)">返回</a>
 				</div>
-			</form>
-		</div>
+				<div class="input-field col s12"></div>
+			</div>
+		</form>
 	</div>
+</div>
 </body>
 </html>

@@ -37,80 +37,74 @@
 <link
 	href="<c:url value='/frame/js/plugins/data-tables/css/jquery.dataTables.min.css'/>"
 	type="text/css" rel="stylesheet" media="screen,projection">
- <style type="text/css">
-        body
-        {
-            margin:0px;
-            padding:0px;
-            font-size:12px; 
-        }
-        #left
-        {
-            width:30%;
-            float:left;
-        }
-        #moveToRight
-        {
-            width: 118px;
-            display:block;
-        }
-        #moveToLeft
-        {
-            width: 119px;
-            display:block;
-        }
-        #right
-        {     
-            width:36%;      
-            float:left;
-        }
-        
-        #btns
-        {
-            float:left;
-            width: 30%;
-            margin:5px;
-        }
-        
-        #container
-        {           
-            width:500px;    
-        }
-        #waitPerson
-        {
-            height: 165px;
-            width:100%px;
-        }
-        #alreadPerson
-        {
-            height: 171px;
-            width:100px;
-        }
-        
-        h4
-        {
-            height:25px;
-            text-align:center;
-            background-color:#F6F6F6    
-        }
-        
-        div
-        {
-            border:1px solid #CCCCCC;
-        }
-        
-        span
-        {
-            display:block;  
-            font-size:13px;
-            font-weight:bold;
-            text-align:center;
-            height:25px;
-            line-height:25px;
-            border:1px solid #CCCCCC;
-            background-color:#F6F6F6    
-        }
-    </style>
+<style type="text/css">
+body {
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+}
+
+#left {
+	width: 30%;
+	float: left;
+}
+
+#moveToRight {
+	width: 118px;
+	display: block;
+}
+
+#moveToLeft {
+	width: 119px;
+	display: block;
+}
+
+#right {
+	width: 36%;
+	float: left;
+}
+
+#btns {
+	float: left;
+	width: 30%;
+	margin: 5px;
+}
+
+#container {
+	width: 500px;
+}
+
+#waitPerson {
+	height: 165px;
+	width: 100% px;
+}
+
+#alreadPerson {
+	height: 171px;
+	width: 100px;
+}
+
+h4 {
+	height: 25px;
+	text-align: center;
+	background-color: #F6F6F6
+}
+
+div {
+	border: 1px solid #CCCCCC;
+}
+
+span {
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	height: 25px;
+	line-height: 25px;
+	border: 1px solid #CCCCCC;
+	background-color: #F6F6F6
+}
+</style>
 </head>
 <body>
 	<!-- START MAIN -->
@@ -161,7 +155,7 @@
 							<li><a href="javascript:void(0);"
 								class="waves-effect waves-block waves-light">基础信息</a></li>
 							<li><a href="../../page/rule/rule1.html"
-							    class="waves-effect waves-block waves-light">规则设置</a></li>
+								class="waves-effect waves-block waves-light">规则设置</a></li>
 							<li><a href="javascript:void(0);"
 								class="waves-effect waves-block waves-light">学生微调</a></li>
 							<li><a href="#" class="waves-effect waves-block waves-light">课表查看</a>
@@ -186,7 +180,7 @@
 									<!-- <h5 class="breadcrumbs-title">学生信息列表</h5> -->
 									<ol class="breadcrumb">
 										<li><a href="index.html">首页</a></li>
-										<li><a href="<c:url value='/student/enterList.do'/>" >学生管理</a></li>
+										<li><a href="<c:url value='/student/enterList.do'/>">学生管理</a></li>
 										<li class="active">学生列表</li>
 									</ol>
 								</div>
@@ -299,8 +293,8 @@
 			<!-- END CONTENT -->
 		</div>
 		<!-- END WRAPPER -->
-		</div>
-		<!-- END MAIN -->
+	</div>
+	<!-- END MAIN -->
 </body>
 <!-- jQuery Library -->
 <script type="text/javascript"

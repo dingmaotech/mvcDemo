@@ -56,7 +56,7 @@
 <script type="text/javascript"
 	src="<c:url value='/frame/js/plugins.js'/>"></script>
 </head>
-<body >
+<body>
 	<!--当前位置 start-->
 	<div id="breadcrumbs-wrapper" class="  lighten-3">
 		<div class="container">
@@ -64,7 +64,7 @@
 				<div class="col s12 m12 l12">
 					<ol class="breadcrumb">
 						<li><a href="index.html">首页</a></li>
-						<li><a href="<c:url value='/student/enterList.do'/>" >学生管理</a></li>
+						<li><a href="<c:url value='/student/enterList.do'/>">学生管理</a></li>
 						<li class="active">学生详情</li>
 					</ol>
 				</div>
@@ -75,64 +75,67 @@
 	<div class="divider"></div>
 	<div id="login-page" class="row">
 		<div class="col s12 z-depth-4 card-panel">
-				<div class="row">
-					<div class="input-field col s12 center">
-						<h4>学生详细信息</h4>
-					</div>
+			<div class="row">
+				<div class="input-field col s12 center">
+					<h4>学生详细信息</h4>
 				</div>
-				<div class="row margin">
-					<div class="input-field col s6">
-						<i class="mdi-av-my-library-books prefix  active"></i> <label for="name"
-							class="validate center-align  active">学号：</label> <input type="text"
-							id="stuNo" name="stuNo" value="${student.stuNo}">
-					</div>
-					<div class="input-field col s6">
-						<i class="mdi-social-person-outline prefix  active"></i> <label for="name"
-							class="center-align  active">姓名：</label> <input type="text" id="stuName"
-							name="stuName" value="${student.stuName }">
-					</div>
+			</div>
+			<div class="row margin">
+				<div class="input-field col s6">
+					<i class="mdi-av-my-library-books prefix  active"></i> <label
+						for="name" class="validate center-align  active">学号：</label> <input
+						type="text" id="stuNo" name="stuNo" value="${student.stuNo}">
 				</div>
-				<div class="row margin">
-					<div class="input-field col s6">
-						<i class="mdi-av-my-library-books prefix  active"></i> <input
-							name="stuSex" type="radio" id="boy" value="0" /> <label for="boy">男</label>
-						<input name="stuSex" type="radio" id="girl" value="1" /> <label
-							for="girl">女</label>
-					</div>
-					<div class="input-field col s6">
-						<i class="mdi-av-my-library-books prefix  active"></i> <label
-							for="birthday" class="center-align  active">出生日期：</label> <input
-							type="text" id="birthday" name="birthday"
-							value='<fmt:formatDate value="${student.birthday }" type='date' dateStyle='long'/>'  >
-					</div>
+				<div class="input-field col s6">
+					<i class="mdi-social-person-outline prefix  active"></i> <label
+						for="name" class="center-align  active">姓名：</label> <input
+						type="text" id="stuName" name="stuName"
+						value="${student.stuName }">
 				</div>
-				<div class="row margin">
-					<div class="input-field col s6">
-						<i class="mdi-communication-call prefix  active"></i> <label for="stuTel"
-							class="center-align  active" >学生电话：</label> <input type="text" id="stuTel"
-							name="stuTel" value="${student.stuTel}">
-					</div>
-					<div class="input-field col s6">
-						<i class="mdi-communication-call prefix  active"></i> <label for="homeTel"
-							class="center-align  active">家庭电话：</label> <input type="text"
-							id="homeTel" name="homeTel" value="${student.homeTel }">
-					</div>
+			</div>
+			<div class="row margin">
+				<div class="input-field col s6">
+					<i class="mdi-av-my-library-books prefix  active"></i> <input
+						name="stuSex" type="radio" id="boy" value="0" /> <label for="boy">男</label>
+					<input name="stuSex" type="radio" id="girl" value="1" /> <label
+						for="girl">女</label>
 				</div>
-				<div class="row margin">
-					<div class="input-field col s12">
-						<i class="mdi-social-domain prefix  active"></i> <label
-							for="dormitoryAddr" class="center-align  active">宿舍地址：</label> <input
-							type="text" id="dormitoryAddr" name="dormitoryAddr"
-							value="${student.dormitoryAddr}">
-					</div>
+				<div class="input-field col s6">
+					<i class="mdi-av-my-library-books prefix  active"></i> <label
+						for="birthday" class="center-align  active">出生日期：</label> <input
+						type="text" id="birthday" name="birthday"
+						value='<fmt:formatDate value="${student.birthday }" type='date' dateStyle='long'/>'>
 				</div>
-				<div class="row margin">
-					<div class="input-field col s12">
-						<i class="mdi-social-domain prefix  active"></i> <label for="stuHomeAddr"
-							class="center-align  active">家庭住址：</label> <input type="text"
-							id="homeAddr" name="homeAddr" value="${student.homeAddr}">
-					</div>
+			</div>
+			<div class="row margin">
+				<div class="input-field col s6">
+					<i class="mdi-communication-call prefix  active"></i> <label
+						for="stuTel" class="center-align  active">学生电话：</label> <input
+						type="text" id="stuTel" name="stuTel" value="${student.stuTel}">
 				</div>
+				<div class="input-field col s6">
+					<i class="mdi-communication-call prefix  active"></i> <label
+						for="homeTel" class="center-align  active">家庭电话：</label> <input
+						type="text" id="homeTel" name="homeTel"
+						value="${student.homeTel }">
+				</div>
+			</div>
+			<div class="row margin">
+				<div class="input-field col s12">
+					<i class="mdi-social-domain prefix  active"></i> <label
+						for="dormitoryAddr" class="center-align  active">宿舍地址：</label> <input
+						type="text" id="dormitoryAddr" name="dormitoryAddr"
+						value="${student.dormitoryAddr}">
+				</div>
+			</div>
+			<div class="row margin">
+				<div class="input-field col s12">
+					<i class="mdi-social-domain prefix  active"></i> <label
+						for="stuHomeAddr" class="center-align  active">家庭住址：</label> <input
+						type="text" id="homeAddr" name="homeAddr"
+						value="${student.homeAddr}">
+				</div>
+			</div>
 			<div class="row">
 				<div class="input-field  col s12">
 					<a class="btn waves-effect waves-light col s5"

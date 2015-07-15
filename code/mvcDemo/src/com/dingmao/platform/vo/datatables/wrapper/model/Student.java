@@ -1,8 +1,6 @@
 package com.dingmao.platform.vo.datatables.wrapper.model;
 
 import com.dingmao.platform.vo.datatables.wrapper.annotation.AoColumn;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 
 public class Student {
@@ -10,18 +8,15 @@ public class Student {
 	private int id;
 	
 	@AoColumn(sTitle = "Name")
-	@JsonInclude(Include.ALWAYS)
 	private String name;
 	
 	@AoColumn(sTitle = "Age")
 	private int age;
 	
 	@AoColumn(sTitle = "Class")
-	@JsonInclude(Include.ALWAYS)
 	private String clazz;
 	
 	@AoColumn(sTitle = "Address", bSearchable = false)
-	@JsonInclude(Include.ALWAYS)
 	private String address;
 	
 	public Student(){}

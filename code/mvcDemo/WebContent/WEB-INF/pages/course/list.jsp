@@ -50,9 +50,10 @@
 			<ul id="slide-out" class="side-nav fixed leftside-navigation">
 				<li class="no-padding">
 					<ul class="collapsible collapsible-accordion">
-						<li class="bold">
-						<a class="collapsible-header waves-effect waves-cyan">
-							<i	class="mdi-device-now-widgets"></i>学生安排</a>
+						<li class="bold"><a
+							class="collapsible-header waves-effect waves-cyan"> <i
+								class="mdi-device-now-widgets"></i>学生安排
+						</a>
 							<div class="collapsible-body">
 								<ul>
 									<li><a href="#">我的排课</a></li>
@@ -89,12 +90,12 @@
 							</li>
 							<li><a href="<c:url value='/user/enterList.do'/>"
 								class="waves-effect waves-block waves-light">用户管理</a></li>
-							<li class="active"><a href="<c:url value='/course/enterList.do'/>"
+							<li class="active"><a
+								href="<c:url value='/course/enterList.do'/>"
 								class="waves-effect waves-block waves-light">课程管理</a></li>
 							<li><a href="<c:url value='/teacher/enterList.do'/>"
 								class="waves-effect waves-block waves-light">教师管理</a></li>
-							<li><a
-								href="<c:url value='/student/enterList.do'/>"
+							<li><a href="<c:url value='/student/enterList.do'/>"
 								class="waves-effect waves-block waves-light">学生管理</a></li>
 						</ul>
 					</div>
@@ -107,7 +108,7 @@
 									<!-- <h5 class="breadcrumbs-title">教师信息列表</h5> -->
 									<ol class="breadcrumb">
 										<li><a href="index.html">首页</a></li>
-										<li><a href="<c:url value='/course/enterList.do'/>" >课程管理</a></li>
+										<li><a href="<c:url value='/course/enterList.do'/>">课程管理</a></li>
 										<li class="active">课程列表</li>
 									</ol>
 								</div>
@@ -203,8 +204,8 @@
 			<!-- END CONTENT -->
 		</div>
 		<!-- END WRAPPER -->
-		</div>
-		<!-- END MAIN -->
+	</div>
+	<!-- END MAIN -->
 </body>
 <!-- jQuery Library -->
 <script type="text/javascript"

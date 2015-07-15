@@ -49,8 +49,7 @@
 				</tr>
 				<tr>
 					<td colspan="4" class="ali02"><input type="submit"
-						value=" 提 交 " /> <input type="reset" value=" 重 置 "
-						class="button" /></td>
+						value=" 提 交 " /> <input type="reset" value=" 重 置 " class="button" /></td>
 				</tr>
 			</table>
 		</form>
